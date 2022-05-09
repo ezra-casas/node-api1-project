@@ -1,7 +1,5 @@
 // BUILD YOUR SERVER HERE
 const express = require('express');
-const bodyParser = require('body-parser');
-
 // import model
 const Model = require('./users/model');
 const server = express();
@@ -83,4 +81,4 @@ server.delete('/api/users/:id', (request, response) => {
 
 
 
-module.exports = {}; // EXPORT YOUR SERVER instead of {}
+module.exports = server; // EXPORT YOUR SERVER instead of {}
